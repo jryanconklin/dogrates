@@ -10,7 +10,7 @@
 
 <div class="layout-center">
 
-  <header class="header" role="banner">
+  <header id="top" class="header mainHeader" role="banner">
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
@@ -88,7 +88,7 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
+
     </main>
 
     <div class="layout-swap__top layout-3col__full">
@@ -134,8 +134,13 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
   <?php print render($page['dogpaw']); ?>
+
+  <div id="bottom" class="mainFooter">
+    <?php print render($page['footer']); ?>
+    <small class="text-muted">All Rights Reserved to J. Ryan Conklin for this Website.</small>
+    <small class="text-muted"><a href="/">Return Home</a> | <a href="#top">Back to top &raquo;</a></small>
+  </div>
 
 </div>
 

@@ -1,3 +1,5 @@
+/* Custom CSS overrides */
+
 
 @import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
 
@@ -16,20 +18,17 @@ a, a:link, a:hover, a:visited, a:active {
   text-decoration: none !important;
 }
 
-/* Zen Class Styles */
-
-article, .node {
-  margin: 0 auto;
-  max-width: 50%;
-  border: 10px;
-  /*background-color: blue;*/
-}
 
 .menu-218 {
   margin-top: .7em;
 }
 
-/* Custom Zen Class Styles */
+.block-menu-block-1, h2 {
+  display: none;
+}
+
+
+
 
 .mainHeader {
   padding: 20px;
